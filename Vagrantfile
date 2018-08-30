@@ -50,6 +50,7 @@ Vagrant.configure("2") do |config|
   # Example for VirtualBox:
   #
   config.vm.provider "virtualbox" do |vb|
+    vb.customize [ "modifyvm", :id, "--uartmode1", "disconnected" ]
   #   # Display the VirtualBox GUI when booting the machine
   #   vb.gui = true
   #
