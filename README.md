@@ -19,26 +19,8 @@ To clone the repository use:
 git clone https://github.com/dvigne/machine-learning-box.git && cd machine-learning-box
 ```
 
-### Configuring the box
-Once you have cloned the box there will be a `Vagrantfile` for configuring the virtual machine and an `init` script responsible for creating the directory structure required for shared folders between your host computer and the virtual machine.
-
-First download the box:
-```
-vagrant box add dvigne/machine-learning-box
-```
-Run the init scripts below (optional)
-
-For Windows:
-```
-init.bat
-```
-For Linux/Mac:
-```
-./init.sh
-```
-
 ### Turning on the Lights
-After you have the Vagrant Box Downloaded and shared folders configured go ahead and turn the virtual machine on with:
+After you have cloned the go ahead and turn the virtual machine on with:
 ```
 vagrant up
 ```
